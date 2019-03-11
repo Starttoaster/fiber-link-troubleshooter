@@ -3,7 +3,8 @@ Takes dBm light level inputs and does calculations to solve the cause of a down 
 
 This Python script assumes you have a certified fiber light testing device that can take readings in dBm. Additionally you should know how to access the relevant OS and switch to attain the readings from either SFP unit. Here is an example of the input-output of this script:
 
-# python fiber-troubleshooting.py
+```
+$ python fiber-troubleshooting.py
 Enter the dBm reading of the SFP on the HOST side [ex. -2.8]-2.7
 Enter the dBm reading of the CABLE on the HOST side [ex. -2.8]-2.3
 Enter the dBm reading of the Switch SFP/Panel? [ex. -2.8]-2.7
@@ -29,3 +30,4 @@ SFP transmitters are healthy:  True
 SFP receivers are healthy:  True
 
 No Layer 1 issues -> HBA is likely the culprit but doesn't rule out SFPs. Swap SFPs and monitor for additional issues, if issue persists schedule HBA replacement.
+```
